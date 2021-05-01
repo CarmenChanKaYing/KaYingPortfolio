@@ -1,0 +1,9 @@
+.project-panel-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, minmax(400px, 45vh));
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}

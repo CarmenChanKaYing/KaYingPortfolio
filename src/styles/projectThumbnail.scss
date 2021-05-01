@@ -1,0 +1,33 @@
+@import "./__variable.scss";
+
+.project-thumbnail-container {
+  width: 30vw;
+  height: 350px;
+  background-color: $project-thumbnail-container-background;
+  border-radius: 20px;
+  box-shadow: $project-thumbnail-container-shadow 0px 5px 15px;
+
+  &:hover {
+    transition: 0.3s;
+    box-shadow: $project-thumbnail-container-shadow-hover 0px 5px 15px;
+  }
+}
+
+.project-thumbnail {
+  width: inherit;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom: 1px solid $project-thumbnail-division-line;
+}
+
+.project-thumbnail-title {
+  color: black;
+  font-size: 22px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.project-thumbnail-link:hover {
+  text-decoration: none;
+}

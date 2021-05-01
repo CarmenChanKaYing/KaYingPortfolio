@@ -1,29 +1,15 @@
+@import "./__variable.scss";
+
 .personal-info-container {
   height: 100%;
   min-height: 100vh;
-  /*
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  */
-
   display: grid;
-  //grid-template-rows: minmax(300px,35vh) minmax(200px,15vh) minmax(250px,25vh) minmax(200px,15vh);
-
-  // grid-template-rows: minmax(35vh, 300px) minmax(15vh,150px) minmax(25vh,200px) minmax(15vh,100px);
-  grid-template-rows: minmax(300px, 35vh) minmax(100px, 15vh) minmax(
-      100px,
-      25vh
-    ) minmax(100px, 15vh);
-
-  //grid-template-rows: minmax(auto,35vh) minmax(auto,15vh) minmax(auto,25vh) minmax(auto,15vh);
-  //grid-template-rows: minmax(35vh, auto) minmax(15vh,auto) minmax(25vh,auto) minmax(15vh,auto);
-
+  grid-template-rows:
+    minmax(300px, 35vh) minmax(100px, 15vh) minmax(100px, 25vh)
+    minmax(100px, 15vh);
   align-content: center;
-  //margin-top: 50px;
   justify-items: center;
-  //align-items: center;
+  color: $personal-info-text;
 }
 
 .personal-info-pic-container {
@@ -41,10 +27,6 @@
 .personal-info-name {
   font-size: 28px;
   font-weight: bold;
-  /*
-  padding: 20px 0;
-  margin-top: 20px;
-  */
 }
 
 .personal-info-link {
@@ -55,10 +37,10 @@
 
 .personal-info-icon {
   font-size: 28px;
-  color: black;
+  color: $personal-info-text;
 
   &:hover {
-    color: red;
+    color: $personal-info-text-hover;
   }
 }
 
@@ -70,14 +52,10 @@
   text-align: center;
   font-size: 18px;
   padding-top: 10px;
-  /*
-  padding: 20px 0;
-  margin-top: 20px;
-  */
 }
 
 .personal-info-copyright {
   font-size: 14px;
-  color: gray;
+  color: rgb(151, 151, 151);
   align-self: end;
 }

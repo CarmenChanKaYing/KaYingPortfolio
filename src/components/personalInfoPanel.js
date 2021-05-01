@@ -18,7 +18,7 @@ function PersonalInfoPanel() {
         <p className="personal-info-name">Carmen Chan</p>
         <div className="personal-info-link">
           <div>
-          <a href="">
+            <a href="mailto:kychan100798@gmail.com">
               <FontAwesomeIcon
                 icon={faEnvelope}
                 className="personal-info-icon"
@@ -26,7 +26,7 @@ function PersonalInfoPanel() {
             </a>
           </div>
           <div className="left-padding">
-          <a href="">
+            <a href="https://github.com/CarmenChanKaYing" target="_blank">
               <FontAwesomeIcon icon={faGithub} className="personal-info-icon" />
             </a>
           </div>

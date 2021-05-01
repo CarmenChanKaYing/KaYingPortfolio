@@ -1,10 +1,15 @@
-@import "basic.scss";
+@import "./basic.scss";
+@import "./__variable.scss";
 
 .index-container {
     height: 100vh;
     min-height: 100vh;
 }
 
-.test{
-    background-color: bisque;
+.personal-info-background{
+    background-color: $personal-info-background;
+}
+
+.project-background{
+    background-color: $project-background;
 }

@@ -1,0 +1,28 @@
+@import "./basic.scss";
+@import "./__variable.scss";
+
+.project-detail-container {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 10vh auto;
+  grid-template-columns: 20% 60% 20%;
+  background-color: $project-thumbnail-container-background;
+}
+
+.project-detail-heading {
+  grid-area: 1/2/2/3;
+  align-self: center;
+}
+
+.project-detail-heading-text {
+  font-size: 28px;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.project-detail-content {
+  grid-area: 2/2/3/3;
+}
