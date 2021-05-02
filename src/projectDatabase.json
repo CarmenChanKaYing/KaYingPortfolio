@@ -1,30 +1,30 @@
 [
     {
         "title": "Ka Ying Programming Blog",
-        "thumbnail": "images/project1/blog_homePage.JPG",
+        "thumbnail": "/images/project1/blog_homePage.JPG",
         "photo": [
             {
-                "photoPath": "images/project1/blog_homePage.JPG",
+                "photoPath": "/images/project1/blog_homePage.JPG",
                 "description": "Home Page"
             },
             {
-                "photoPath": "images/project1/blog_blogPost.JPG",
+                "photoPath": "/images/project1/blog_blogPost.JPG",
                 "description": "Blog Post"
             },
             {
-                "photoPath": "images/project1/blog_tagPage.JPG",
+                "photoPath": "/images/project1/blog_tagPage.JPG",
                 "description": "Tag Page"
             },
             {
-                "photoPath": "images/project1/blog_categoryPage.JPG",
+                "photoPath": "/images/project1/blog_categoryPage.JPG",
                 "description": "Category Page"
             },
             {
-                "photoPath": "images/project1/blog_archivePage.JPG",
+                "photoPath": "/images/project1/blog_archivePage.JPG",
                 "description": "Archive Page"
             },
             {
-                "photoPath": "images/project1/blog_searchPage.JPG",
+                "photoPath": "/images/project1/blog_searchPage.JPG",
                 "description": "Search Page"
             }
         ],
@@ -43,22 +43,22 @@
     },
     {
         "title": "Shopping Cart Website",
-        "thumbnail": "images/project2/shopping_cart_homePage.JPG",
+        "thumbnail": "/images/project2/shopping_cart_homePage.JPG",
         "photo": [
             {
-                "photoPath": "images/project2/shopping_cart_homePage.JPG",
+                "photoPath": "/images/project2/shopping_cart_homePage.JPG",
                 "description": "Home Page"
             },
             {
-                "photoPath": "images/project2/shopping_cart_productPage.JPG",
+                "photoPath": "/images/project2/shopping_cart_productPage.JPG",
                 "description": "Product Page"
             },
             {
-                "photoPath": "images/project2/shopping_cart_productDetailPage.JPG",
+                "photoPath": "/images/project2/shopping_cart_productDetailPage.JPG",
                 "description": "Product Detail Page"
             },
             {
-                "photoPath": "images/project2/shopping_cart_cartPage.JPG",
+                "photoPath": "/images/project2/shopping_cart_cartPage.JPG",
                 "description": "Cart Page"
             }
         ],
@@ -76,34 +76,34 @@
     },
     {
         "title": "Battleship Game Play",
-        "thumbnail": "images/project3/battleship_homePage.JPG",
+        "thumbnail": "/images/project3/battleship_homePage.JPG",
         "photo": [
             {
-                "photoPath": "images/project3/battleship_homePage.JPG",
+                "photoPath": "/images/project3/battleship_homePage.JPG",
                 "description": "Home Page"
             },
             {
-                "photoPath": "images/project3/battleship_rule1.JPG",
+                "photoPath": "/images/project3/battleship_rule1.JPG",
                 "description": "Rule"
             },
             {
-                "photoPath": "images/project3/battleship_rule2.JPG",
+                "photoPath": "/images/project3/battleship_rule2.JPG",
                 "description": "Rule"
             },
             {
-                "photoPath": "images/project3/battleship_setting1.JPG",
+                "photoPath": "/images/project3/battleship_setting1.JPG",
                 "description": "Setting"
             },
             {
-                "photoPath": "images/project3/battleship_setting2.JPG",
+                "photoPath": "/images/project3/battleship_setting2.JPG",
                 "description": "Setting"
             },
             {
-                "photoPath": "images/project3/battleship_setShipStage.JPG",
+                "photoPath": "/images/project3/battleship_setShipStage.JPG",
                 "description": "Set Ship Stage"
             },
             {
-                "photoPath": "images/project3/battleship_playingStage.JPG",
+                "photoPath": "/images/project3/battleship_playingStage.JPG",
                 "description": "Playing Stage"
             }
         ],
@@ -120,42 +120,42 @@
     },
     {
         "title": "Sorting Algorithm Learning Platform",
-        "thumbnail": "images/project4/sorting_index.JPG",
+        "thumbnail": "/images/project4/sorting_index.JPG",
         "photo": [
             {
-                "photoPath": "images/project4/sorting_index.JPG",
+                "photoPath": "/images/project4/sorting_index.JPG",
                 "description": "Login Page"
             },
             {
-                "photoPath": "images/project4/sorting_register.JPG",
+                "photoPath": "/images/project4/sorting_register.JPG",
                 "description": "Register Page"
             },
             {
-                "photoPath": "images/project4/sorting_homePage.JPG",
+                "photoPath": "/images/project4/sorting_homePage.JPG",
                 "description": "Home Page"
             },
             {
-                "photoPath": "images/project4/sorting_intro1.JPG",
+                "photoPath": "/images/project4/sorting_intro1.JPG",
                 "description": "Algorithm Introduction"
             },
             {
-                "photoPath": "images/project4/sorting_intro2.JPG",
+                "photoPath": "/images/project4/sorting_intro2.JPG",
                 "description": "Algorithm Introduction"
             },
             {
-                "photoPath": "images/project4/sorting_ex1.JPG",
+                "photoPath": "/images/project4/sorting_ex1.JPG",
                 "description": "Exercise"
             },
             {
-                "photoPath": "images/project4/sorting_ex2.JPG",
+                "photoPath": "/images/project4/sorting_ex2.JPG",
                 "description": "Exercise"
             },
             {
-                "photoPath": "images/project4/sorting_profile.JPG",
+                "photoPath": "/images/project4/sorting_profile.JPG",
                 "description": "Profile"
             },
             {
-                "photoPath": "images/project4/sorting_report.JPG",
+                "photoPath": "/images/project4/sorting_report.JPG",
                 "description": "Report (Administrator)"
             }
         ],

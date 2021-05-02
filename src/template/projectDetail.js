@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import ProjectCarousel from "../components/projectCarousel.js"
 import "../styles/projectDetail.scss"
 
 const projectDetail = ({ pageContext }) => (
@@ -10,6 +11,9 @@ const projectDetail = ({ pageContext }) => (
       </Link>
     </div>
     <div className="project-detail-content">
+      <div>
+        <ProjectCarousel photo={pageContext.photo}/>
+      </div>
       <p>{pageContext.title}</p>
       <p>{pageContext.demo}</p>
       <p>{pageContext.languages}</p>
