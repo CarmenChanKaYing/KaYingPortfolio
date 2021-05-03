@@ -9,6 +9,7 @@ exports.createPages = ({ actions: { createPage } }) => {
         title: data.title,
         photo: data.photo,
         languages: data.languages,
+        content: data.content
       },
     }
 

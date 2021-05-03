@@ -11,12 +11,27 @@ const projectDetail = ({ pageContext }) => (
       </Link>
     </div>
     <div className="project-detail-content">
+      <ProjectCarousel photo={pageContext.photo} />
+      <div>{pageContext.title}</div>
       <div>
-        <ProjectCarousel photo={pageContext.photo}/>
+        {pageContext.github === "undefined" ? (
+          ""
+        ) : (
+          <a href={pageContext.github}>GitHub</a>
+        )}
+        {pageContext.demo === "undefined" ? (
+          ""
+        ) : (
+          <a href={pageContext.demo}>Demo</a>
+        )}
       </div>
-      <p>{pageContext.title}</p>
-      <p>{pageContext.demo}</p>
       <p>{pageContext.languages}</p>
+      <div>{pageContext.content}</div>
+      {pageContext.description === "undefined" ? (
+        ""
+      ) : (
+        <div>{pageContext.description}</div>
+      )}
     </div>
   </div>
 )
