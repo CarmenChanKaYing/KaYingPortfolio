@@ -1,5 +1,6 @@
 import React from "react"
 import { useState } from "react"
+import { useSwipeable } from "react-swipeable"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircle } from "@fortawesome/free-solid-svg-icons"
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons"
@@ -28,11 +29,10 @@ function ProjectCarousel(props) {
     )
 
     image.push(
-      <img
+      <div
         className={i === activeindex ? "project-carousel-picture" : "hide"}
-        src={photoData[i].photoPath}
-        alt={photoData[i].description}
-      />
+        style={{ backgroundImage: `url(${photoData[i].photoPath})` }}
+      ></div>
     )
   }
 
@@ -64,19 +64,17 @@ function ProjectCarousel(props) {
     )
 
     tempImgArr[currentIndex] = (
-      <img
+      <div
         className="hide"
-        src={photoData[currentIndex].photoPath}
-        alt={photoData[currentIndex].description}
-      />
+        style={{ backgroundImage: `url(${photoData[currentIndex].photoPath})` }}
+      ></div>
     )
 
     tempImgArr[newIndex] = (
-      <img
+      <div
         className="project-carousel-picture"
-        src={photoData[newIndex].photoPath}
-        alt={photoData[newIndex].description}
-      />
+        style={{ backgroundImage: `url(${photoData[newIndex].photoPath})` }}
+      ></div>
     )
 
     setActiveIndex(newIndex)
@@ -104,9 +102,21 @@ function ProjectCarousel(props) {
     }
   }
 
+  const swipeHandler = useSwipeable({
+    onSwipedLeft: () => incrementActiveIndex(),
+    onSwipedRight: () => decrementActiveIndex(),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  })
+
   return (
     <div className="project-carousel-container">
-      <div>{imageArr}</div>
+      <div
+        style={{ height: "inherit", backgroundColor: "rgb(24, 23, 23)" }}
+        {...swipeHandler}
+      >
+        {imageArr}
+      </div>
       <div className="project-carousel-description">
         {photoData[activeindex].description}
       </div>

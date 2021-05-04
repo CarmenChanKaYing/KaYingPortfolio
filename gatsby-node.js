@@ -13,15 +13,15 @@ exports.createPages = ({ actions: { createPage } }) => {
       },
     }
 
-    if (data.description !== "undefined") {
+    if (data.description !== undefined) {
       projectInfo["context"]["description"] = data.description
     }
 
-    if (data.github !== "undefined") {
+    if (data.github !== undefined) {
       projectInfo["context"]["github"] = data.github
     }
 
-    if (data.demo !== "undefined") {
+    if (data.demo !== undefined) {
       projectInfo["context"]["demo"] = data.demo
     }
 

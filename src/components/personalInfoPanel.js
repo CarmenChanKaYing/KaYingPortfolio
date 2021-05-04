@@ -1,5 +1,6 @@
 import React from "react"
 import "../styles/personalInfoPanel.scss"
+import ProjectCopyright from "../components/projectCopyright.js"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
@@ -38,7 +39,7 @@ function PersonalInfoPanel() {
         <p>Android Apps Development (Java)</p>
       </div>
       <div className="personal-info-copyright">
-        &copy; Copyright {new Date().getFullYear()}, Carmen Chan
+        <ProjectCopyright />
       </div>
     </div>
   )

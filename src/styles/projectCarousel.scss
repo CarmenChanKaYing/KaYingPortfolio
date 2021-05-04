@@ -17,10 +17,15 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+  height: 650px;
 }
 
 .project-carousel-picture {
   width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   object-fit: cover;
   animation-name: image-fade-in;
   animation-duration: 1s;

@@ -1,0 +1,16 @@
+@import "./__variable.scss";
+
+.project-tag {
+  background-color: $project-detail-main;
+  color: $personal-info-text;
+  font-size: 14px;
+  padding: 5px 8px;
+  margin-top: 8px;
+  margin-right: 10px;
+
+  &:hover {
+    background-color: $project-detail-hover;
+    transition: 0.3s;
+    cursor: default;
+  }
+}

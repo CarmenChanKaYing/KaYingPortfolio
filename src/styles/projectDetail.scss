@@ -17,12 +17,60 @@
 .project-detail-heading-text {
   font-size: 28px;
   font-weight: bold;
+  color: $project-detail-main;
 
   &:hover {
-    text-decoration: none;
+    color: $project-detail-hover;
   }
 }
 
-.project-detail-content {
+.project-detail-content-container {
   grid-area: 2/2/3/3;
+}
+
+.project-detail-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.project-detail-link-container {
+  margin-bottom: 20px;
+}
+
+.project-detail-link {
+  font-size: 18px;
+  margin-right: 25px;
+  color: $project-detail-main;
+
+  &:hover {
+    color: $project-detail-hover;
+  }
+}
+
+.project-detail-languages-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.project-detail-description {
+  margin-bottom: 20px;
+  color: grey;
+}
+
+.project-detail-content {
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 1.8;
+}
+
+.project-detail-coyright {
+  border-top: 1px solid rgb(214, 214, 214);
+  font-size: 14px;
+  color: grey;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 10px;
 }

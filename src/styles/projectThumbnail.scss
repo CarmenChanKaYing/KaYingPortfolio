@@ -1,8 +1,7 @@
 @import "./__variable.scss";
+@import "~bootstrap/scss/bootstrap";
 
 .project-thumbnail-container {
-  width: 30vw;
-  height: 350px;
   background-color: $project-thumbnail-container-background;
   border-radius: 20px;
   box-shadow: $project-thumbnail-container-shadow 0px 5px 15px;
@@ -23,11 +22,21 @@
 
 .project-thumbnail-title {
   color: black;
-  font-size: 22px;
-  margin-left: 20px;
-  margin-top: 10px;
 }
 
 .project-thumbnail-link:hover {
   text-decoration: none;
+}
+
+@include media-breakpoint-up(xl) {
+  .project-thumbnail-container {
+    width: 32vw;
+  }
+  
+  .project-thumbnail-title {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
 }
