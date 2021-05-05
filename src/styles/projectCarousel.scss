@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap";
+
 .hide {
   display: none;
 }
@@ -16,8 +18,6 @@
   width: inherit;
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
-  height: 650px;
 }
 
 .project-carousel-picture {
@@ -34,8 +34,8 @@
 .project-carousel-description {
   color: white;
   background-color: rgb(24, 23, 23);
-  font-size: 16px;
   text-align: center;
+  font-size: 16px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -48,9 +48,9 @@
 }
 
 .project-carousel-arrow {
+  text-align: center;
   font-size: 30px;
   width: 35px;
-  text-align: center;
 
   &:hover {
     cursor: pointer;
@@ -76,13 +76,41 @@
 }
 
 .project-carousel-dot-active {
+  color: rgb(124, 124, 124);
   font-size: 12px;
   margin-left: 5px;
   margin-right: 5px;
-  color: rgb(124, 124, 124);
 
   &:hover {
     cursor: pointer;
     color: rgb(124, 124, 124);
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .project-carousel-container {
+    margin-bottom: 50px;
+    height: 300px;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .project-carousel-container {
+    margin-bottom: 50px;
+    height: 500px;
+  }
+}
+
+@include media-breakpoint-only(lg) {
+  .project-carousel-container {
+    margin-bottom: 50px;
+    height: 575px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .project-carousel-container {
+    margin-bottom: 50px;
+    height: 650px;
   }
 }

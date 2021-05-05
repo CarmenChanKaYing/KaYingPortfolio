@@ -3,35 +3,28 @@
 
 .project-detail-container {
   min-height: 100%;
-  display: grid;
-  grid-template-rows: 10vh auto;
-  grid-template-columns: 20% 60% 20%;
+  display: flex;
+  justify-content: center;
   background-color: $project-thumbnail-container-background;
 }
 
 .project-detail-heading {
-  grid-area: 1/2/2/3;
-  align-self: center;
+  padding: 25px 0;
 }
 
 .project-detail-heading-text {
-  font-size: 28px;
   font-weight: bold;
   color: $project-detail-main;
+  font-size: 28px;
 
   &:hover {
     color: $project-detail-hover;
   }
 }
 
-.project-detail-content-container {
-  grid-area: 2/2/3/3;
-}
-
 .project-detail-title {
-  font-size: 36px;
   font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .project-detail-link-container {
@@ -39,9 +32,9 @@
 }
 
 .project-detail-link {
+  color: $project-detail-main;
   font-size: 18px;
   margin-right: 25px;
-  color: $project-detail-main;
 
   &:hover {
     color: $project-detail-hover;
@@ -56,8 +49,8 @@
 }
 
 .project-detail-description {
-  margin-bottom: 20px;
   color: grey;
+  margin-bottom: 20px;
 }
 
 .project-detail-content {
@@ -68,9 +61,48 @@
 
 .project-detail-coyright {
   border-top: 1px solid rgb(214, 214, 214);
-  font-size: 14px;
   color: grey;
+  font-size: 14px;
   margin-top: 50px;
   margin-bottom: 50px;
   padding-top: 10px;
+}
+
+@include media-breakpoint-down(sm) {
+  .project-detail-content-container {
+    max-width: 90%;
+  }
+
+  .project-detail-heading-text {
+    font-size: 24px;
+  }
+
+  .project-detail-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .project-detail-content {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 2;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .project-detail-content-container {
+    max-width: 700px;
+  }
+}
+
+@include media-breakpoint-only(lg) {
+  .project-detail-content-container {
+    max-width: 800px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .project-detail-content-container {
+    max-width: 1000px;
+  }
 }

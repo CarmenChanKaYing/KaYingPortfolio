@@ -5,7 +5,6 @@
  */
 
 module.exports = {
-  /* Your site config here */
   pathPrefix: "/KaYingPortfolio",
   plugins: [`react-bootstrap`, `gatsby-plugin-sass`],
 }

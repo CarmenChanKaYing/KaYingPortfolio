@@ -2,15 +2,24 @@
 
 .project-panel-container {
   height: 100%;
-  display: grid;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
 }
 
 @include media-breakpoint-up(xl) {
   .project-panel-container {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, minmax(400px, 45vh));
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .project-panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

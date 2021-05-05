@@ -10,10 +10,10 @@ function MainPage() {
   return (
     <Container className="index-container" fluid>
       <Row>
-        <Col xl={3} className="personal-info-background">
+        <Col xl={3} lg={4} className="personal-info-background">
           <PersonalInfoPanel />
         </Col>
-        <Col xl={9} className="project-background">
+        <Col xl={9} lg={8} className="project-background">
           <ProjectPanel />
         </Col>
       </Row>

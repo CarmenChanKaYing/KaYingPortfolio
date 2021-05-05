@@ -4,10 +4,10 @@
 .personal-info-container {
   height: 100%;
   min-height: 100vh;
-  display: grid;
-  align-content: center;
-  justify-items: center;
   color: $personal-info-text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .personal-info-pic-container {
@@ -44,14 +44,11 @@
 
 .personal-info-copyright {
   color: rgb(151, 151, 151);
-  align-self: end;
 }
 
 @include media-breakpoint-up(xl) {
-  .personal-info-container {
-    grid-template-rows:
-      minmax(300px, 35vh) minmax(100px, 15vh) minmax(100px, 25vh)
-      minmax(100px, 15vh);
+  .personal-info-pic-container {
+    margin-top: 80px;
   }
 
   .personal-info-pic {
@@ -61,6 +58,7 @@
 
   .personal-info-name {
     font-size: 28px;
+    margin-top: 40px;
   }
 
   .personal-info-icon {
@@ -72,11 +70,127 @@
   }
 
   .personal-info-skill {
+    margin-top: 50px;
     font-size: 18px;
     padding-top: 10px;
   }
 
   .personal-info-copyright {
     font-size: 14px;
+    position: absolute;
+    bottom: 30px;
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .personal-info-pic-container {
+    margin-top: 30px;
+  }
+
+  .personal-info-pic {
+    width: 180px;
+    height: 180px;
+  }
+
+  .personal-info-name {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+
+  .personal-info-icon {
+    font-size: 32px;
+  }
+
+  .left-padding {
+    margin-left: 50px;
+  }
+
+  .personal-info-skill {
+    margin-top: 30px;
+    font-size: 16px;
+    padding-top: 10px;
+    height: 225px;
+  }
+
+  .personal-info-copyright {
+    font-size: 12px;
+    position: absolute;
+    bottom: 30px;
+   
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .personal-info-pic-container {
+    margin-top: 80px;
+  }
+
+  .personal-info-pic {
+    width: 250px;
+    height: 250px;
+  }
+
+  .personal-info-name {
+    font-size: 28px;
+    margin-top: 40px;
+  }
+
+  .personal-info-icon {
+    font-size: 28px;
+  }
+
+  .left-padding {
+    margin-left: 30px;
+  }
+
+  .personal-info-skill {
+    margin-top: 50px;
+    font-size: 18px;
+    padding-top: 10px;
+    height: 250px;
+  }
+
+  .personal-info-copyright {
+    font-size: 14px;
+    position: absolute;
+    bottom: 30px;
+   
+  }
+}
+
+@include media-breakpoint-only(lg) {
+  .personal-info-pic-container {
+    margin-top: 100px;
+  }
+
+  .personal-info-pic {
+    width: 225px;
+    height: 225px;
+  }
+
+  .personal-info-name {
+    font-size: 28px;
+    margin-top: 40px;
+  }
+
+  .personal-info-icon {
+    font-size: 28px;
+  }
+
+  .left-padding {
+    margin-left: 30px;
+  }
+
+  .personal-info-skill {
+    margin-top: 50px;
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  .personal-info-copyright {
+    font-size: 14px;
+    position: absolute;
+    bottom: 30px;
+  }
+}
+
