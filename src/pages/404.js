@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import "../styles/basic.scss"
 
 function NotFoundPage() {
   const containerStyle = {

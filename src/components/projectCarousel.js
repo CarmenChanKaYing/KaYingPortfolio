@@ -1,5 +1,6 @@
 import React from "react"
 import { useState } from "react"
+import { withPrefix } from "gatsby"
 import { useSwipeable } from "react-swipeable"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircle } from "@fortawesome/free-solid-svg-icons"
@@ -31,7 +32,9 @@ function ProjectCarousel(props) {
     image.push(
       <div
         className={i === activeindex ? "project-carousel-picture" : "hide"}
-        style={{ backgroundImage: `url(${photoData[i].photoPath})` }}
+        style={{
+          backgroundImage: `url(${withPrefix(photoData[i].photoPath)})`,
+        }}
       ></div>
     )
   }
@@ -66,14 +69,20 @@ function ProjectCarousel(props) {
     tempImgArr[currentIndex] = (
       <div
         className="hide"
-        style={{ backgroundImage: `url(${photoData[currentIndex].photoPath})` }}
+        style={{
+          backgroundImage: `url(${withPrefix(
+            photoData[currentIndex].photoPath
+          )})`,
+        }}
       ></div>
     )
 
     tempImgArr[newIndex] = (
       <div
         className="project-carousel-picture"
-        style={{ backgroundImage: `url(${photoData[newIndex].photoPath})` }}
+        style={{
+          backgroundImage: `url(${withPrefix(photoData[newIndex].photoPath)})`,
+        }}
       ></div>
     )
 

@@ -6,5 +6,5 @@
 
 module.exports = {
   pathPrefix: "/KaYingPortfolio",
-  plugins: [`react-bootstrap`, `gatsby-plugin-sass`],
+  plugins: [`gatsby-plugin-sass`],
 }
