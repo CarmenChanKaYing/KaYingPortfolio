@@ -1,4 +1,5 @@
-import React, { useEffect } from "react"
+import React from "react"
+import { Helmet } from "react-helmet"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
@@ -7,12 +8,11 @@ import PersonalInfoPanel from "../components/personalInfoPanel.js"
 import ProjectPanel from "../components/projectPanel.js"
 
 function MainPage() {
-  useEffect(() => {
-    document.title = "Ka Ying Portfolio";
-  });
-
   return (
     <Container className="index-container" fluid>
+       <Helmet>
+        <title>Ka Ying Portfolio</title>
+      </Helmet>
       <Row>
         <Col xl={3} lg={4} className="personal-info-background">
           <PersonalInfoPanel />

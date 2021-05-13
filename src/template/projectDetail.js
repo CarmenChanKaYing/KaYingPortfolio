@@ -1,17 +1,17 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 import ProjectCarousel from "../components/projectCarousel.js"
 import ProjectTag from "../components/projectTag.js"
 import ProjectCopyright from "../components/projectCopyright.js"
 import "../styles/projectDetail.scss"
 
 function ProjectDetail({ pageContext }) {
-  useEffect(() => {
-    document.title = `${pageContext.title}`;
-  });
-
   return (
     <div className="project-detail-container">
+      <Helmet>
+        <title>{pageContext.title}</title>
+      </Helmet>
       <div className="project-detail-content-container">
         <div className="project-detail-heading">
           <Link to="/" className="project-detail-heading-text">
