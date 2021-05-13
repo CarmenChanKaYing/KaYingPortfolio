@@ -1,19 +1,24 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link } from "gatsby"
 import ProjectCarousel from "../components/projectCarousel.js"
 import ProjectTag from "../components/projectTag.js"
 import ProjectCopyright from "../components/projectCopyright.js"
 import "../styles/projectDetail.scss"
 
-const projectDetail = ({ pageContext }) => (
-  <div className="project-detail-container">
-    <div className="project-detail-content-container">
-      <div className="project-detail-heading">
-        <Link to="/" className="project-detail-heading-text">
-          Carmen Chan
+function ProjectDetail({ pageContext }) {
+  useEffect(() => {
+    document.title = `${pageContext.title}`;
+  });
+
+  return (
+    <div className="project-detail-container">
+      <div className="project-detail-content-container">
+        <div className="project-detail-heading">
+          <Link to="/" className="project-detail-heading-text">
+            Carmen Chan
         </Link>
-      </div>
-     
+        </div>
+
         <ProjectCarousel photo={pageContext.photo} />
         <div className="project-detail-title">{pageContext.title}</div>
         <div className="project-detail-link-container">
@@ -57,8 +62,9 @@ const projectDetail = ({ pageContext }) => (
           <ProjectCopyright />
         </div>
       </div>
-  
-  </div>
-)
+    </div>
+  );
+}
 
-export default projectDetail
+
+export default ProjectDetail
